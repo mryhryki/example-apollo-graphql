@@ -9,6 +9,7 @@ function App() {
   const { loading, error, data} = useQuery(gql`
     query GetBooks {
       books {
+        a
           title
           author
       }
