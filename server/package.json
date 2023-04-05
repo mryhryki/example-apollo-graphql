@@ -3,8 +3,8 @@
   "private": true,
   "author": "mryhryki",
   "scripts": {
-    "start": "esbuild --bundle --platform=node --target=node18 src/server/index.ts | node",
-    "dev": "nodemon --watch ./src/ --ext ts --exec 'npm start'",
+    "start": "esbuild --bundle --platform=node --target=node18 ./index.ts | node",
+    "dev": "nodemon --watch ./ --ext ts --exec 'npm start'",
     "lint": "mryhryki-lint --directory ./",
     "lint:fix": "mryhryki-lint --directory ./ --fix",
     "type": "tsc",
@@ -16,6 +16,7 @@
     "esbuild": "^0.17.15",
     "graphql": "^16.6.0",
     "nodemon": "^2.0.22",
+    "npm-run-all": "^4.1.5",
     "typescript": "^5.0.3"
   }
 }
